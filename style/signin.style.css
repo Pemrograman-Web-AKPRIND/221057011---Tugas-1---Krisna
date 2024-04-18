@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: hsl(var(--background-foreground));
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: inline-flex;
+    background-color: hsl(var(--background));
+  }
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.wrapper {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid hsl(var(--primary)); /* Warna biru tua */
+    border-radius: 10px;
+    max-width: 400px; 
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-inner {
+    padding: 20px;
+}
+
+.title-text {
+    text-align: center; /* Menengahkan teks judul */
+    margin-bottom: 20px; /* Beri jarak di bawah judul */
+}
+
+.title {
+    font-size: 2rem; /* Ukuran font judul */
+    font-weight: 600; /* Ketebalan font judul */
+    color: hsl(var(--primary)); /* Warna teks judul */
+    margin-bottom: 20px; /* Beri ruang di bawah judul */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: hsl(var(--primary)); /* Warna teks label */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(var(--primary)); /* Warna border input */
+    border-radius: 5px;
+}
+
+.pass-link,
+.signup-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pass-link a,
+.signup-link a {
+    color: hsl(var(--primary)); 
+    text-decoration: none;
+}
+
+.pass-link a:hover,
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: hsl(var(--primary)); 
+    color: hsl(var(--primary-foreground)); 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #001f4d; 
+}
+
+
